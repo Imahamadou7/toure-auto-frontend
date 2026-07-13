@@ -7,7 +7,7 @@ import api from '../api/client';
 import { mediaUrl } from '../utils/format';
 
 
-const MAX_FILE_SIZE = 10 * 1024 * 1024;
+const MAX_FILE_SIZE = 20 * 1024 * 1024;
 
 const ALLOWED_TYPES = [
   'image/jpeg',
@@ -436,8 +436,8 @@ export default function ImageUploader({
 
           <label
             className={`aspect-square rounded-lg border-2 border-dashed grid place-items-center cursor-pointer ${uploading
-                ? 'opacity-50 pointer-events-none'
-                : ''
+              ? 'opacity-50 pointer-events-none'
+              : ''
               }`}
           >
 
