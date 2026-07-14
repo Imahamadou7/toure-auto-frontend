@@ -4,14 +4,13 @@ import { useEffect, useRef, useState } from 'react';
 import { FiEye } from 'react-icons/fi';
 import { formatFCFA, photosOf } from '../utils/format';
 
-const PLACEHOLDER = 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=70';
 const INTERVAL = 4500;
 
 function PhotoCarousel({ photos, nom, onNavigate }) {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
   const timer = useRef(null);
-  const imgs = photos.length ? photos : [PLACEHOLDER];
+  const imgs = photos;
 
   useEffect(() => {
     if (imgs.length <= 1 || paused) return;

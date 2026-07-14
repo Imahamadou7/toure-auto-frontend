@@ -5,8 +5,9 @@ import api from '../api/client';
 import { smartSearch } from '../utils/smartSearch';
 import CarCard from '../components/CarCard';
 import SmartSearch from '../components/SmartSearch';
+import heroImage from '../assets/hero.png'; 
 
-const HERO_BG = 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=75';
+const HERO_BG = heroImage;
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
